@@ -1,0 +1,19 @@
+    <Manager pathname="" />
+        <Resource name="jdbc/hibiznet"
+                                        auth="Container"
+                                        type="javax.sql.DataSource"
+                                        driverClassName="core.log.jdbc.driver.MysqlDriver"
+                                        loginTomeout="10"
+                                        maxWait="5000"
+                                        username="hibiznet"
+                                        password="hibiznet9123"
+                                        testOnBorrow="true"
+                                        url="jdbc:mysql://localhost:3306/hibiznet?zeroDateTimeBehavior=convertToNull">
+        </Resource>
+
+    <!-- Uncomment this to enable Comet connection tacking (provides events
+         on session expiration as well as webapp lifecycle) -->
+    <!--
+    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    -->
+
